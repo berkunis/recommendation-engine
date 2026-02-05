@@ -88,7 +88,7 @@ All hyperparameters live in `utils/constants.py` — no magic numbers buried in 
 | Constant | Value | Why This Value |
 |----------|-------|----------------|
 | `RANDOM_SEED` | 42 | Reproducibility across all agents |
-| `NUM_ENTITIES` | 500 | Large enough for statistical stability, small enough to run in seconds |
+| `NUM_ENTITIES` | 500 | Large enough for statistical stability, small enough to run in seconds  |
 | `NUM_ITEMS` | 1,000 | 2:1 item-to-entity ratio mimics real catalogs |
 | `INTERACTIONS_PER_ENTITY` | 20 | 10,000 total interactions — enough for reliable model training |
 | `NUM_BINS` | 10 | Standard discretization granularity; enough to show the failure clearly |
