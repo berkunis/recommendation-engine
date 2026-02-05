@@ -7,7 +7,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-Runs in ~5-10 seconds. Produces console output from all 7 agents plus 3 visualizations in `output/`.
+Runs in ~5-10 seconds. Produces console output from all 7 agents plus 3 visualizations in `output/` (requires `matplotlib`, which is optional: `pip install matplotlib`).
 
 ---
 

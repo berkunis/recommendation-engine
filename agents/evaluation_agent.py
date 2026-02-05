@@ -41,8 +41,8 @@ class EvaluationAgent(BaseAgent):
         print_subsection("Bin Balance")
         ew_entropy = self._normalized_entropy(ew_counts.values)
         eh_entropy = self._normalized_entropy(eh_counts.values)
-        ew_cv = ew_counts.std() / ew_counts.mean()
-        eh_cv = eh_counts.std() / eh_counts.mean()
+        ew_cv = ew_counts.std() / ew_counts.mean() if ew_counts.mean() > 0 else 0
+        eh_cv = eh_counts.std() / eh_counts.mean() if eh_counts.mean() > 0 else 0
         print(f"  Equal-Width  — Norm. Entropy: {ew_entropy:.4f}, CV: {ew_cv:.4f}")
         print(f"  Equal-Height — Norm. Entropy: {eh_entropy:.4f}, CV: {eh_cv:.4f}")
 
